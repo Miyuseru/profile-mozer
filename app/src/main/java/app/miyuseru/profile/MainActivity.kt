@@ -12,16 +12,35 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        //コメント〜〜
-        profileImage.isVisible = false
-        profileCommentText.isVisible = false
+
 
         button1.setOnClickListener{
-            profileImage.isVisible = true
-            profileCommentText.isVisible = true
+            profileImage.setImageResource(R.drawable.randy_image)
+            profileLabelText.text="名前"
+            profileCommentText.text="みゆせるだよ"
 
 
         }
 
+        button2.setOnClickListener{
+            profileImage.setImageResource(R.drawable.baseball_image)
+            profileLabelText.text="本当は卓球が好き"
+            profileCommentText.text = "小４からやってたよ"
+
+        }
+
+        button3.setOnClickListener{
+            profileImage.setImageResource(R.drawable.donut_image)
+            profileLabelText.text="donut"
+            profileCommentText.text = "ドーナッっっつ"
+
+        }
+        button4.setOnClickListener{
+            profileImage.setImageResource(R.drawable.gadget_image
+            )
+            profileLabelText.text="ガジェと"
+            profileCommentText.text = "ガジェット系が好きらしい"
+
+        }
     }
 }
